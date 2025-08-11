@@ -196,7 +196,7 @@ def main():
 
         # --------- Formateo porcentual para mostrar ----------
         pct_cols = ["Dividend Yield %", "Payout Ratio", "ROA", "ROE",
-                    "Oper Margin", "Profit Margin", "WACC", "ROIC"]
+                    "Oper Margin", "Profit Margin", "WACC", "ROIC", "EVA"]
         for col in pct_cols:
             df[col] = df[col].apply(lambda x: f"{x*100:,.2f}%" if pd.notnull(x) else "N/D")
 
